@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=q, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mail app</title>
+  </head>
+  <body>
+    <form action="sendmail.php" method="POST">
+      <!-- afzender -->
+      <label for="from">Afzender: </label>
+      <input type="email" name="from" /> <br />
+      <!-- ondwerp -->
+      <label for="subject">Ondwerp</label>
+      <input type="text" name="subject" /><br />
+      <!-- bericht -->
+      <textarea name="message" cols="100" rows="10"></textarea>
+      <!-- button -->
+      <input type="submit" name="submit" value="VERSTUUR!" />
+    </form>
+  </body>
+</html>
